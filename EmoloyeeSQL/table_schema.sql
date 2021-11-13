@@ -1,6 +1,8 @@
 CREATE TABLE departments(
 	dept_no VARCHAR(32),
-	dept_name VARCHAR(32)
+	dept_name VARCHAR(32),
+	PRIMARY KEY (dept_no),
+	UNIQUE(dept_name)
 );
 
 CREATE TABLE dept_emp(
@@ -20,7 +22,7 @@ CREATE TABLE employees(
 	first_name VARCHAR(32),
 	last_name VARCHAR(32),
 	sex VARCHAR(32),
-	hite_date DATE
+	hire_date DATE
 );
 
 CREATE TABLE salaries(
